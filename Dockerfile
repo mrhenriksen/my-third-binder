@@ -2,7 +2,7 @@ FROM docker.io/manimcommunity/manim:v0.17.2
 
 RUN pip install --no-cache-dir jupyterhub
 
-ARG NB_USER=jovyan
+ARG NB_USER=manimuser
 ARG NB_UID=1000
 ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
