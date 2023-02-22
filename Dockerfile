@@ -1,6 +1,8 @@
 FROM docker.io/manimcommunity/manim:v0.17.2
 
-RUN pip install --no-cache-dir jupyterhub
+#RUN pip install --no-cache-dir jupyterhub
+USER root
+RUN pip install notebook
 
 ARG NB_USER=manimuser
 ARG NB_UID=1000
