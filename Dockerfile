@@ -27,7 +27,7 @@
 #COPY --chown=manimuser:manimuser . /manim
 FROM manimcommunity/manim:v0.17.2
 
-#RUN pip install notebook
+RUN pip install notebook
 
 COPY --chown=manimuser:manimuser . /manim
  
