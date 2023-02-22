@@ -16,12 +16,16 @@
 #    ${NB_USER}
 
 #COPY --chown=manimuser:manimuser . /manim
-FROM manimcommunity/manim:v0.17.2
+#FROM manimcommunity/manim:v0.17.2
 
-USER root
-RUN pip install notebook
+#USER root
+#RUN pip install notebook
 
-ARG NB_USER=manimuser
-USER ${NB_USER}
+#ARG NB_USER=manimuser
+#USER ${NB_USER}
+
+#COPY --chown=manimuser:manimuser . /manim
+FROM manimcommunity/manim:v0.3.0
 
 COPY --chown=manimuser:manimuser . /manim
+ 
