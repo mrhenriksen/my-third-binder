@@ -25,7 +25,7 @@
 #USER ${NB_USER}
 
 #COPY --chown=manimuser:manimuser . /manim
-FROM manimcommunity/manim:v0.3.0
+FROM manimcommunity/manim:v0.17.2
 
 COPY --chown=manimuser:manimuser . /manim
  
